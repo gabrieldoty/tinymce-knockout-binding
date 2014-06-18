@@ -22,7 +22,7 @@
 				settings = configure( binding['defaults'], ext, options, arguments );
 			
 			// Ensure the valueAccessor's value has been applied to the underlying element, before instanciating the tinymce plugin
-			$( element ).text( valueAccessor()() );
+			$( element ).html( valueAccessor()() );
 
 			// Defer TinyMCE instantiation
 			setTimeout( function() {
